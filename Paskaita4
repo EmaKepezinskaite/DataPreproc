@@ -1,0 +1,6 @@
+# Nuskaityti duomenis iš failų
+data6089= read.csv("C:/Users/ema/Downloads/data6089.csv")
+data9013= read.csv("Users/ema/Downloads/data9013.csv")
+
+#Duomenu sujungimas
+data=merge(data6089, data9013,by.x=c('year', 'country', 'gdppc', 'unemp', 'export', 'export'), by.y=c('year', 'country', 'gdppc', 'unemp', 'export', 'export'),all=T)
